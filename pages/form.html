@@ -7,36 +7,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <form name="reg" action="confirmation.html" method="get">
-        <ul>
-            <li>
-                Name: <br><input TYPE="TEXT" NAME="name">
-            </li>
-            <li>
-                Age: <br><input TYPE="number" NAME="age" min="18">
-            </li>
-            <li>
-                Date of Birth: <br><input TYPE="date" NAME="dob">
-            </li>
-            <li>
-                Gender:<input TYPE="radio" NAME="gender" checked>Male
-                <input TYPE="radio" NAME="gender">Female
-            </li>
-            <li>
-                Enter Email: <input type="email" name="email">
-            </li>
-            <li>
-                <select id="selectbox" name="" onchange="location.href = this.value;">
+    <div class="container mt-5">
+        <h1 class="text-center">Details Form</h1>
+        <form>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="Enter Email">
+                </div>
+            <div class="form-group">
+                <label>Age</label>
+                <input type="number" class="form-control" placeholder="Enter Age" min="18">
+            </div>
+            <div class="form-group">
+                <label>Date of Birth</label>
+                <input type="date" class="form-control" placeholder="Enter Date">
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="form-check  form-check-inline">
+                    <input class="form-check-input" type="radio" name="genderRadio" value="male" checked>
+                    <label class="form-check-label">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check  form-check-inline">
+                    <input class="form-check-input" type="radio" name="genderRadio" value="female">
+                    <label class="form-check-label">
+                        Female
+                    </label>
+                </div>
+            </div>      
+            <div class="form-group">
+                <label>State</label>
+                <select class="form-control">
                     <option value="./practice.html" selected>Option1</option>
                     <option value="https://www.google.co.in/">Option2</option>
                     <option value="https://www.gmail.com/">Option3</option>
                 </select>
-            </li>
-        </ul>
-    </form>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
 </body>
 
 </html>
