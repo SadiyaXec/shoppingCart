@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
+
 <body>
     <form name="reg" action="confirmation.html" method="get">
-
-        Name:<input TYPE="TEXT" NAME="name"><br><br>
-
-        Age:<input TYPE="number" NAME="age" min="18"><br><br>
-
-        Date of Birth:<input TYPE="date" NAME="dob"><br><br>
-
-        Gender:<input TYPE="radio" NAME="gender" checked>Male
-        <input TYPE="radio" NAME="gender">Female<br><br>
-
-        Enter Email: <input type="email" name="email"><br><br>
-
-        <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
-            <option value="/parctice.html" selected>Option1</option>
-            <option value="https://www.google.co.in/">Option2</option>
-            <option value="https://www.gmail.com/">Option3</option>
-        </select>
+        <ul>
+            <li>
+                Name: <br><input TYPE="TEXT" NAME="name">
+            </li>
+            <li>
+                Age: <br><input TYPE="number" NAME="age" min="18">
+            </li>
+            <li>
+                Date of Birth: <br><input TYPE="date" NAME="dob">
+            </li>
+            <li>
+                Gender:<input TYPE="radio" NAME="gender" checked>Male
+                <input TYPE="radio" NAME="gender">Female
+            </li>
+            <li>
+                Enter Email: <input type="email" name="email">
+            </li>
+            <li>
+                <select id="selectbox" name="" onchange="location.href = this.value;">
+                    <option value="./practice.html" selected>Option1</option>
+                    <option value="https://www.google.co.in/">Option2</option>
+                    <option value="https://www.gmail.com/">Option3</option>
+                </select>
+            </li>
+        </ul>
     </form>
 </body>
+
 </html>
