@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Shopping cart</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,47 +17,47 @@
         <form>
             <div class="form-group">
                 <label>Name</label>
-                <input type="text" class="form-control" placeholder="Enter Name">
+                <input type="text" class="form-control" id="name" placeholder="Enter Name">
             </div>
             <div class="form-group">
                     <label>Email</label>
-                    <input type="email" class="form-control" placeholder="Enter Email">
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email">
                 </div>
             <div class="form-group">
                 <label>Age</label>
-                <input type="number" class="form-control" placeholder="Enter Age" min="18">
+                <input type="number" class="form-control" id="age" placeholder="Enter Age" min="18">
             </div>
             <div class="form-group">
                 <label>Date of Birth</label>
-                <input type="date" class="form-control" placeholder="Enter Date">
+                <input type="date" class="form-control" id="date" placeholder="Enter Date">
             </div>
             <div class="form-group">
                 <label>Gender</label>
                 <div class="form-check  form-check-inline">
-                    <input class="form-check-input" type="radio" name="genderRadio" value="male" checked>
+                    <input class="form-check-input" type="radio" id="male" name="genderRadio" value="male" checked>
                     <label class="form-check-label">
                         Male
                     </label>
                 </div>
                 <div class="form-check  form-check-inline">
-                    <input class="form-check-input" type="radio" name="genderRadio" value="female">
+                    <input class="form-check-input" type="radio" id="female" name="genderRadio" value="female">
                     <label class="form-check-label">
                         Female
                     </label>
                 </div>
             </div>      
             <div class="form-group">
-                <label>State</label>
-                <select class="form-control">
-                    <option value="./practice.html" selected>Option1</option>
-                    <option value="https://www.google.co.in/">Option2</option>
-                    <option value="https://www.gmail.com/">Option3</option>
+                <label>Select a shop</label>
+                <select class="form-control" id="shopsList">
+                    <option value="./practice.html">Shop A</option>
+                    <option value="https://www.google.co.in/">Shop B</option>
+                    <option value="https://www.gmail.com/">Shop C</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
         </form>
     </div>
-
+    <script src="../js/form.js"></script>
 </body>
 
 </html>
