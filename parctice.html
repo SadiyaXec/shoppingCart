@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<title> Form </title>
+
+<BODY bgcolor="CCFFFF">
+<center>
+<h2> Registration form for Art fest </h2>
+
+<a href ="index.html"> Home</a><br><br>
+<form name="reg" action="confirmation.html" method="get">
+
+USER NAME: <INPUT TYPE="TEXT" NAME ="UNAME" placeholder="Enter your username" autofocus> <br><br>
+PASSWORD: <INPUT TYPE="password" NAME ="pwd" placeholder="Enter your password"><br><br>
+
+Name:<INPUT TYPE="TEXT" NAME ="name"><br><br>
+
+Age:<INPUT TYPE="number" NAME ="age" min="18"><br><br>
+
+Date of Birth:<INPUT TYPE="date" NAME ="dob"><br><br>
+
+Gender:<INPUT TYPE="radio" NAME ="gender" checked>Male
+<INPUT TYPE="radio" NAME ="gender">Female<br><br>
+
+Exhibition day:<select name="day">
+<option value="12"> 12 August 2019</option>
+<option value="13"> 13 August 2019</option>
+<option value="14"> 14 August 2019</option>
+</select><br><br>
+
+Art Category: <select>
+<option value="pop"> pop art</option>
+<option value="classic"> classic art</option>
+<option value="abstract"> Abstract art</option>
+</select><br><br>
+
+Enter Email: <input type="email" name="email"><br><br>
+
+<input type="reset" name="rst" value="RESET">
+<input type="Submit" name="sub" value="SUBMIT">
+</center>
+
+</form>
+</body>
+</head>
+</html>
